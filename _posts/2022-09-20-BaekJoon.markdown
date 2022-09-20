@@ -1,0 +1,77 @@
+---
+layout: post
+title:  "2022/09/20 백준 풀이"
+date:   2022-09-20 16:18:30 +0900
+categories: C++ Algorithm
+---
+
+#### 2557번 Hello World
+
+<script src="https://gist.github.com/Hyewon0309/91336e892ca8755de846dc39ebd1e29c.js"></script>
+
+#### 10718번 We love kriii
+
+<script src="https://gist.github.com/Hyewon0309/acc25c03406c14afbfaa24c8beb2bad7.js"></script>
+
+#### 1000번 A+B
+
+<script src="https://gist.github.com/Hyewon0309/83df3dc2599b3255aea9c5d22e427e58.js"></script>
+
+#### 1001번 A-B
+
+<script src="https://gist.github.com/Hyewon0309/54bfe0c0c0e02f912e3f831179bcd199.js"></script>
+
+#### 10998번 AxB
+
+<script src="https://gist.github.com/Hyewon0309/56db70a2a773d1e33c389f41c6334e1e.js"></script>
+
+#### 1008번 A/B
+
+<script src="https://gist.github.com/Hyewon0309/481fd6b56c536397ec0013c78b59650a.js"></script>
+
+1008번의 경우 더하기, 빼기, 곱하기와 다르게 코드가 추가되었다.
+처음에는 입력받는 두 숫자인 A, B의 자료형을 int에서 float, double로 바꾸어주었다.
+그럼에도 통과하지 못해 std::cout.precision()과 std::fixed를 이용해 문제를 해결했다.
+
+> std::cout.precision() : 출력할 실수의 자리수를 n으로 표현하는 것, 소수점 아래 자리수를 의미하는 것이 아님   
+> std::fixed : 소수점 아래 자리수만 고정하고 싶을 때 사용   
+> std::cout.unsetf(ios::fixed) : std::fixed를 해제하고 싶을 때 사용   
+
+#### 10869번 사칙연산
+
+<script src="https://gist.github.com/Hyewon0309/a30fcc1982c6bae90f2842dde8d17a5b.js"></script>
+
+#### 10926번 ??!
+
+<script src="https://gist.github.com/Hyewon0309/c4db177148285254f0f63776662d3367.js"></script>
+
+#### 18108번 1998년생인 내가 태국에서는 2541년생?!
+
+<script src="https://gist.github.com/Hyewon0309/35eb43d5fd35d98399eb8496f27b49c3.js"></script>
+
+#### 3003번 킹, 퀸, 룩, 비숍, 나이트, 폰
+
+<script src="https://gist.github.com/Hyewon0309/cfa70f755056fa6e915208d6936298f6.js"></script>
+
+3003번의 경우, 배열을 처음으로 사용한 문제이다.   
+배열을 사용함과 동시에 for문을 이용해 코드를 간략하게 작성할 수 있었다.
+
+#### 10430번 나머지
+
+<script src="https://gist.github.com/Hyewon0309/a75c9fa49ef0e9b7d563c6104271dfe8.js"></script>
+
+#### 2588번 곱셈
+
+<script src="https://gist.github.com/Hyewon0309/5bbb2ab9a11fc2c83bded4b066a5d698.js"></script>
+
+#### 10171번 고양이
+
+<script src="https://gist.github.com/Hyewon0309/c8a4f226e66af1269965efbe64f311b0.js"></script>
+
+#### 10172번 개
+
+<script src="https://gist.github.com/Hyewon0309/7e4c2741e4e1ba0b3adae8ed7c8d9c4c.js"></script>
+
+#### 25083번 새싹
+
+<script src="https://gist.github.com/Hyewon0309/afe616454d1ba0f7f0e80d782428fd18.js"></script>
