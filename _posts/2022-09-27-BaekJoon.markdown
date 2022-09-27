@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "2022/09/27 백준 풀이"
+date:   2022-09-27 19:00:00 +0900
+categories: C++ Algorithm
+---
+
+지금까지는 'using namespace std'를 사용해 cin, cout을 사용할 때 귀찮음을 최소화했는데, C++ 교재를 찾아 공부를 해보니 모두 권장하지 않아 오늘부터는 사용하지 않기로 했다. 권장하지 않는 이유는 새로운 함수를 정의할 때, 이름이 겹친다면 프로그램이 제대로 작동하지 않기 때문이라고 한다.
+
+#### 2739번 구구단
+
+<script src="https://gist.github.com/Hyewon0309/22a392238b2e9c670d2b298ec34b02db.js"></script>
+
+####

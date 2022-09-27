@@ -14,13 +14,24 @@ $leftWidth: 220px;
   box-sizing: border-box;
 }
 
+/*
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway", sans-serif, ;
   font-size: 16px;
   line-height: 1.2em;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}*/
+@font-face {
+    font-family: 'Gamja Flower';
+    src: url('https: //fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Gamja Flower';
 }
 
 img,
