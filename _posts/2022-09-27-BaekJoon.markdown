@@ -18,6 +18,26 @@ categories: C++ Algorithm
 #### 8393번 합
 
 첫 번째 풀이 : for문 사용
-
+<script src="https://gist.github.com/Hyewon0309/eb77372f6cca4a40d78af690d521f69d.js"></script>
 
 두 번째 풀이 : 공식 사용
+<script src="https://gist.github.com/Hyewon0309/e732d1ae905688ab80180fa13d2e41dc.js"></script>
+
+#### 25304번 영수증
+
+<script src="https://gist.github.com/Hyewon0309/27f2213cc1d5241c3495b4f72b608b99.js"></script>
+
+#### 15552번 빠른 A+B
+
+문제에서 C++을 사용하고 있고 cin / cout을 사용하고자 한다면, cin.tie(NULL)과 sync_with_stdio(false)를 둘 다 적용하라고 하여 두 코드가 어떤 것을 의미하는지 찾아보았다.
+
+cin.tie(NULL) 코드는 cin과 count의 묶음을 풀어주는 코드이다. 디폴트는 cin, cout이 묶여있는 것으로 다른 스트림이 작업을 요청하면 자동적으로 버퍼를 flush해준다. 두 묶음을 풀게 되면 자동으로 버퍼를 flush하지 않기 때문에 입출력 순서를 보장받을 수 없고, 이를 지키기 위해서는 cout을 사용하기 전에 버퍼를 비워줘야 한다.
+
+sync_with_stdio(false) 코드는 C++의 iostream과 C의 stdio.h를 동기화하지 않는 것이다. C++ 만의 독립적인 버퍼가 사용되기 때문에 실행 속도가 빨라지지만 C와 동시에 수행할 수 없다는 단점이 있다. 하지만, 나는 C의 stdio.h를 사용하지 않기 때문에 상관없을 것 같아서 앞으로도 계속해서 사용할 예정이다.
+
+또한, 문제에서는 std::endl을 사용하지 말고 '\n'을 사용하라고 명시하였다. std::endl은 줄바꿈만 하는 것이 아니라 버퍼를 flush하기 때문에 '\n'보다 더 많은 시간이 걸리기 때문이다.
+
+이 모든 것을 이용해 문제를 해결하였고, 코드에 대해 찾아보면서 scanf, printf가 cin, cout보다 훨씬 속도가 빠르다는 자료를 발견해, 어떤 것을 이용하는 것이 좋을지 조금 더 찾아보고자 한다.
+
+<script src="https://gist.github.com/Hyewon0309/f3b7a24acdd9146f371349ac179b2a95.js"></script>
+
